@@ -147,7 +147,7 @@ class Parodule extends BaseModule {
                 self.paroduleData.MODULE4 = temp[3];
             }
             else if (data[0] == 0xff && data[1] == 0x66) {
-                console.log(data);
+                //console.log(data);
                 let readData = data.subarray(2, data.length);
                 for (let i = 0; i < 4; i++) {
                     self.paroduleData.SENSOR[i] = readData[i];
